@@ -1,0 +1,66 @@
+<div class="signup">
+    <div class="container">
+    <div class="signup-content mb-5 pb-4">
+        <div class="page-heading">
+            <h2 class="pt-4 pb-3 bold text-center">Signup</h2>
+        </div>  
+<div id="generalinfo" class="w-100">
+          <div class="yellow-bg px-md-5 px-sm-3 ml-0">
+              <h6 class="text-uppercase bold px-3 mb-0">General Info</h6>
+          </div>
+          <div class="px-md-5 px-sm-3">
+              <form class="px-3 my-4">
+                  <div class="signup-form">
+                  <div class="row form-group">
+                      <div class="col-sm-6 mb-xs-15">
+                          <input type="text" class="form-control py-3 px-3" id="firstname" placeholder="First Name">
+                      </div>
+                      <div class="col-sm-6">
+                          <input type="text" class="form-control py-3 px-3" id="lastname" placeholder="Last Name">
+                      </div>
+                  </div>
+                  <div class="row form-group">
+                      <div class="col-sm-6">
+                          <input type="email" class="form-control py-3 px-3" id="email" placeholder="Email">
+                      </div>
+                      <div class="col-sm-6">
+                      </div>
+                  </div>
+                  <div class="row form-group">
+                      <div class="col-sm-6 mb-xs-15">
+                          <input type="password" class="form-control py-3 px-3" id="password" placeholder="Password">
+                      </div>
+                      <div class="col-sm-6">
+                          <input type="password" class="form-control py-3 px-3" id="conpassword" placeholder="Confirm Password">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="row form-group">
+                      <div class="col-sm-6 mb-xs-15">
+                          <button type="button" class="btn btn-theme-signup text-uppercase"
+                          routerLink="/signup">Back</button>
+                      </div>
+                      <div class="col-sm-6" [hidden]="id == 2">
+                          <button type="button" class="btn btn-theme-signup  text-uppercase"
+                          routerLink="/signup/student/education">Skip</button>
+                          <button type="button" class="btn btn-theme w-45 text-uppercase pull-right"
+                          routerLink="/signup/student/education">Next</button>
+                      </div>
+                      <div class="col-sm-6" [hidden]="id == 1">
+                          <button type="button" class="btn btn-theme-signup  text-uppercase"
+                          routerLink="/signup/teacher/experience">Skip</button>
+                          <button type="button" class="btn btn-theme w-45 text-uppercase pull-right"
+                          routerLink="/signup/teacher/experience">Next</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+        </div>
+    </div>
+       <ol class="carousel-indicators">
+        <li ></li>
+        <li class="active"></li>
+        <li class="active"></li>
+      </ol>
+    </div>
+</div>
